@@ -19,7 +19,7 @@ set -e
 #
 # Git commit from https://github.com/docker/docker-install when
 # the script was uploaded (Should only be modified by upload job):
-SCRIPT_COMMIT_SHA="2c6287394e48843daa63776dc17d646c4c48cce0"
+SCRIPT_COMMIT_SHA="355c637a33f5e6e0ea4cf59344353fd46a2eaba9"
 
 # strip "v" prefix if present
 VERSION="${VERSION#v}"
@@ -34,7 +34,7 @@ if [ -z "$CHANNEL" ]; then
 	CHANNEL=$DEFAULT_CHANNEL_VALUE
 fi
 
-DEFAULT_DOWNLOAD_URL="mirrors.ustc.edu.cn/docker-ce"
+DEFAULT_DOWNLOAD_URL="https://mirrors.ustc.edu.cn/docker-ce"
 if [ -z "$DOWNLOAD_URL" ]; then
 	DOWNLOAD_URL=$DEFAULT_DOWNLOAD_URL
 fi
